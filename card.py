@@ -13,5 +13,9 @@ class Card():
   def set_status(self, new_status):
     self.status = new_status
 
+  def __str__(self):
+    return f'Card color is {self.color}, digit is {self.digit}, status is {self.status}'
 
+  def __repr__(self):
+    return f'Card(color={self.color}, digit={self.digit}, status={self.status})'
   
